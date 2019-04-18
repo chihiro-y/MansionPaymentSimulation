@@ -8,7 +8,6 @@ BONUS = int (input ('ボーナスの月に払う金額○ 万円>>  ') ) * 10000
 YEAR = int (input('返済期間○ 年>>  '))
 MONTH = 12 * YEAR
 
-
 def calc_payment_bonus(return_payment):
 	payment_month = (return_payment * RATE_MONTH * (1 + RATE_MONTH)**MONTH) / ((1 + RATE_MONTH)**MONTH - 1)
 	return payment_month
