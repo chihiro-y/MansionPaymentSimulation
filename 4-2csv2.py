@@ -10,14 +10,12 @@ MONTH = 12 * YEAR
 
 
 def calc_payment_bonus(return_payment):
-	
 	payment_month = (return_payment * RATE_MONTH * (1 + RATE_MONTH)**MONTH) / ((1 + RATE_MONTH)**MONTH - 1)
 	return payment_month
 
 def get_bonus_payment(bonus):
         bonus_pay = bonus * RATE_BONUS *(1 + RATE_BONUS) ** 2 / ((1 + RATE_BONUS) ** 2 - 1) 
         return bonus_pay
-
 
 def get_interest(payment):
 	interest = payment * RATE_MONTH 
